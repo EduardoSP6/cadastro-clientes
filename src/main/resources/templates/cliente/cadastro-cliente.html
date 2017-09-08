@@ -71,31 +71,17 @@
 					</div>
 
 					<div class="row">
-					
 						<div class="form-group field-required"
 							th:classappend="${#fields.hasErrors('dataNas')} ? has-error">
 							<label for="Data" class="control-label col-sm-2" >Data de
 								Nascimento</label>
 							
-							<div class="input-group date col-md-6" data-provide="datepicker"
+							<div class="date col-md-6" data-provide="datepicker"
 								data-date-language="pt-BR" data-date-autoclose="true">
 								 <input type="text" name="dataNas" id="datepicker"
 									class="form-control cl-data-nas" th:field="*{dataNas}">
-								 <div class="input-group-addon glyphicon glyphicon-calendar" id="icon-cal"></div>
-								
+								 <div class="input-group-addon glyphicon glyphicon-calendar hidden"></div>								
 							</div>
-							
-
-<!-- 							<div class="input-group date col-md-6" data-provide="datepicker"
-								data-date-language="pt-BR" data-date-autoclose="true">
-								 <input type="text" name="dataNas" id="datepicker"
-									class="form-control cl-data-nas" th:field="*{dataNas}">
-								<span class="input-group-addon date-span"> <span
-									class="glyphicon glyphicon-calendar"></span>
-								</span>	
-							</div>
- -->							
-	
 						</div>
 					</div>
 
